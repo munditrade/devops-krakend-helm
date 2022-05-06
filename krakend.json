@@ -19,7 +19,7 @@
             {
               "url_pattern": "/",
               "host": [
-                "google.com"
+                "monitoring.prometheus-dev-cluster-server"
               ]
             }
           ]
