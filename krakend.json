@@ -23,8 +23,8 @@
     "backend": [
           {
               "timeout": "4100ms",
-              "host": ["http://hasura.hasura-dev"],
-              "url_pattern": "/graphql?timeout=4s"
+              "host": ["http://hasura-dev.hasura"],
+              "url_pattern": "/v1/graphql"
           }
       ]
   }
