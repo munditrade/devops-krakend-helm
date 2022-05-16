@@ -28,7 +28,7 @@
           {
               "timeout": "4100ms",
               "host": ["backend-risk-dev.backend-risk-dev.svc.cluster.local"],
-              "url_pattern": "/v1/graphql",
+              "url_pattern": "/live",
               "encoding": "no-op",
               "extra_config": {
                 "modifier/martian": {
