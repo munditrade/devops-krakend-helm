@@ -26,16 +26,16 @@
               "timeout": "4100ms",
               "host": ["backend-risk-dev.backend-risk-dev.svc.cluster.local"],
               "url_pattern": "/v1/graphql",
-              "encoding": "no-op"
-          //     "extra_config": {
-          //       "modifier/martian": {
-          //           "header.Modifier": {
-          //             "scope": ["request"],
-          //             "name": "x-hasura-admin-secret",
-          //             "value": "{{ env "TERM" }}"
-          //           }
-          //     }
-          // }
+              "encoding": "no-op",
+              "extra_config": {
+                "modifier/martian": {
+                    "header.Modifier": {
+                      "scope": ["request"],
+                      "name": "x-hasura-admin-secret",
+                      "value": "{{ env "TERM" }}"
+                    }
+              }
+          }
           }
       ]
   }
