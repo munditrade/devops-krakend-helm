@@ -82,5 +82,7 @@ krakendJson: ""
 addlVolumes: []
 addlVolumeMounts: []
 env:
-  FC_ENABLE: 1
-  TERM: test
+  - name: FC_ENABLE 
+    value: 1
+  - name: TERM 
+    value: test
