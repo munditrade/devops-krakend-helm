@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata: # kpt-merge: /frontend-ingress
+  name: grafana-virtualservice
+  namespace: krakend-dev
+spec:
+  hosts:
+  - 'krakend.private.services.dev.mundi.work'
+  gateways:
+  - 'istio-system/istio-ingressgateway-dev-private'
+  http:
+  - route:
+    - destination:
+        host: krakend-dev
+        port:
+          number: 80
