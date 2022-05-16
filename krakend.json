@@ -23,7 +23,7 @@
     "backend": [
           {
               "timeout": "4100ms",
-              "host": ["http://hasura-dev.hasura"],
+              "host": ["backend-risk-dev.backend-risk-dev.svc.cluster.local"],
               "url_pattern": "/v1/graphql",
               "extra_config": {
                 "modifier/martian": {
