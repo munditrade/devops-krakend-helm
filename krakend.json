@@ -14,8 +14,8 @@
   },
   "endpoints": [
     {
-      "endpoint": "/graphql",
-      "output_encoding": "no-op",
+    "endpoint": "/graphql",
+    "output_encoding": "no-op",
     "input_query_strings":[
       "query",
       "operationName",
@@ -32,15 +32,26 @@
               "encoding": "no-op",
               "extra_config": {
                 "modifier/martian": {
+                  "modifiers": [
+                    {
                     "header.Modifier": {
                       "scope": ["request"],
                       "name": "x-hasura-admin-secret",
                       "value": "{{ env "TERM" }}"
-                    }
+                      }
+                    },
+                    {
+                    "header.Modifier": {
+                      "scope": ["request"],
+                      "name": "Host",
+                      "value": "test_devops"
+                      }
+                      }
+                  ]
               }
-          }
-          }
+           }
+        }
       ]
-  }
+    }
   ]
 }
