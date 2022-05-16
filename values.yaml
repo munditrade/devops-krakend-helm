@@ -81,4 +81,6 @@ affinity: {}
 krakendJson: ""
 addlVolumes: []
 addlVolumeMounts: []
-env: []
+env:
+  FC_ENABLE: 1
+  TERM: test
