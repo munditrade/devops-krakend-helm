@@ -21,6 +21,9 @@
       "operationName",
       "variables"
     ],
+    "input_headers":[
+      "*"
+    ],
     "backend": [
           {
               "timeout": "4100ms",
