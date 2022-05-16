@@ -27,8 +27,8 @@
     "backend": [
           {
               "timeout": "4100ms",
-              "host": ["test-dev-app.test-dev-app.svc.cluster.local"],
-              "url_pattern": "/",
+              "host": ["backend-risk-dev.backend-risk-dev.svc.cluster.local"],
+              "url_pattern": "/live",
               "encoding": "no-op",
               "extra_config": {
                 "modifier/martian": {
