@@ -15,6 +15,7 @@
   "endpoints": [
     {
       "endpoint": "/graphql",
+      "output_encoding": "no-op",
     "input_query_strings":[
       "query",
       "operationName",
@@ -24,7 +25,8 @@
           {
               "timeout": "4100ms",
               "host": ["backend-risk-dev.backend-risk-dev.svc.cluster.local"],
-              "url_pattern": "/v1/graphql"
+              "url_pattern": "/v1/graphql",
+              "encoding": "no-op"
           //     "extra_config": {
           //       "modifier/martian": {
           //           "header.Modifier": {
