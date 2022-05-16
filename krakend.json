@@ -32,6 +32,9 @@
               "encoding": "no-op",
               "extra_config": {
                 "modifier/martian": {
+                  "fifo.Group": {
+                    "scope": ["request", "response"],
+                    "aggregateErrors": true,
                   "modifiers": [
                     {
                     "header.Modifier": {
@@ -51,6 +54,7 @@
               }
            }
         }
+      }
       ]
     }
   ]
