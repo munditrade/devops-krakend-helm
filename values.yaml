@@ -83,6 +83,6 @@ addlVolumes: []
 addlVolumeMounts: []
 env:
   - name: FC_ENABLE 
-    value: 1
+    value: "1"
   - name: TERM 
     value: test
