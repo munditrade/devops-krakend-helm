@@ -24,13 +24,13 @@
           {
               "timeout": "4100ms",
               "host": ["http://hasura-dev.hasura"],
-              "url_pattern": "/v1/graphql"
+              "url_pattern": "/v1/graphql",
               "extra_config": {
                 "modifier/martian": {
                     "header.Modifier": {
                       "scope": ["request"],
                       "name": "x-hasura-admin-secret",
-                      "value": "{{ env "TERM" }}"
+                      "value": "{{ env 'TERM' }}"
                     }
               }
           }
