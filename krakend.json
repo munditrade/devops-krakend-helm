@@ -30,7 +30,7 @@
                     "header.Modifier": {
                       "scope": ["request"],
                       "name": "x-hasura-admin-secret",
-                      "value": "{{ env 'TERM' }}"
+                      "value": "{{ env "TERM" }}"
                     }
               }
           }
