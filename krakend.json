@@ -42,14 +42,7 @@
                       "name": "x-hasura-admin-secret",
                       "value": "{{ env "TERM" }}"
                       }
-                    },
-                    {
-                    "header.Modifier": {
-                      "scope": ["request"],
-                      "name": "Host",
-                      "value": "test_devops"
-                      }
-                      }
+                    }
                   ]
               }
            }
